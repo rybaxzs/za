@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Walentynka 💖</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ffd1dc, #ffe6f0);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+    .box {
+      background: white;
+      padding: 28px;
+      border-radius: 22px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+      max-width: 360px;
+    }
+    h1 {
+      color: #ff4d88;
+    }
+    p {
+      color: #555;
+      font-size: 16px;
+    }
+    img {
+      width: 100%;
+      border-radius: 16px;
+      margin: 18px 0;
+    }
+    button {
+      font-size: 18px;
+      padding: 12px 26px;
+      margin: 10px;
+      border: none;
+      border-radius: 14px;
+      cursor: pointer;
+    }
+    .yes {
+      background: #ff4d88;
+      color: white;
+    }
+    .no {
+      background: #f0f0f0;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box" id="content">
+    <h1>Czy zostaniesz moją walentynką? 💗</h1>
+
+    <img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" alt="serduszka">
+
+    <p>
+      Bardzo mi na Tobie zależy i byłoby mi naprawdę miło,
+      gdybyś chciała spędzić ten dzień ze mną 🌸
+    </p>
+
+    <button class="yes" onclick="yesClick()">Tak 💕</button>
+    <button class="no" onclick="alert('Rozumiem 🌷 Dziękuję za szczerość')">Nie</button>
+  </div>
+
+  <script>
+    function yesClick() {
+      document.getElementById("content").innerHTML = `
+        <h1>Dziękuję 💖</h1>
+        <img src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif" alt="kwiaty">
+        <p>
+          To dla mnie naprawdę dużo znaczy 🌸<br>
+          Nie mogę się doczekać ❤️
+        </p>
+      `;
+    }
+  </script>
+
+</body>
+</html>
